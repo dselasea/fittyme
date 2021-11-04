@@ -9,13 +9,7 @@
 body {
   font-family: 'Sora', sans-serif;
   background-color: #67b6c1;
-}
-
-@media (max-width: 715px) {
-  body {
-    position: relative;
-    height: 100vh;
-  }
+  position: relative;
 }
 
 body nav {
@@ -90,7 +84,8 @@ body nav .container div img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    bottom: 0;
+    border: 2px solid red;
     background-color: #f4feff;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -145,7 +140,7 @@ body nav .container ul li {
 
 @media (max-width: 715px) {
   body nav .container ul li {
-    padding: 1.5rem 0;
+    padding: 3rem 0;
   }
 }
 
@@ -178,7 +173,7 @@ body main {
 }
 
 body main section.text {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 body main section p {
