@@ -159,7 +159,7 @@ body nav .container ul li a:hover {
 }
 
 body main {
-  padding: 7rem 0;
+  padding: 2rem 0;
   color: #f4feff;
   text-align: center;
   width: 90%;
@@ -173,6 +173,7 @@ body main {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    padding: 7rem 0;
   }
 }
 
@@ -222,6 +223,7 @@ body main section .section__icons div {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
+  text-align: center;
 }
 
 body main section .section__icons div p {
