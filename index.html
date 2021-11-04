@@ -5,25 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Fit Tyme</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="container">
-          <img src="/img/logo.png" alt="Fit time logo" />
+    <nav>
+      <div class="container">
+        <img src="/img/logo.png" alt="Fit time logo" class="logo" />
+        <i class="bx bx-menu" id="open"></i>
+        <div id="nav-open">
+          <i class="bx bx-x" id="close"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <img src="/img/nav-icon.png" alt="nav-icon" / class="nav-icon">
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="text">
+        <h1>Your Personal Health Assistant</h1>
+        <p>
+          A fitness tracker lets your watch and record your heart rate, daily
+          burned calories and step countes. Regular use of fitness tracker
+          boosts your daily workouts and makes them achievable
+        </p>
+        <button type="button">
+          <span>Run Now</span> <i class="bx bx-cart-alt"></i>
+        </button>
+      </section>
+      <section class="img-icons">
+        <img src="/img/fitness-img.png" alt="" />
+        <div class="section__icons">
           <div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <img src="/img/nav-icon.png" alt="nav-icon" />
+            <img src="./img/battery 1.png" alt="" />
+            <p>10 Day Battery</p>
+          </div>
+          <div>
+            <img src="./img/Group 2.png" alt="" />
+            <p>10 Day Battery</p>
+          </div>
+          <div>
+            <img src="./img/thunder 1.png" alt="" />
+            <p>10 Day Battery</p>
           </div>
         </div>
-      </nav>
-    </header>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
