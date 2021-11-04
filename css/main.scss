@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap');
+
+//  map colors
+$colors: (
+    btn-color: #ff6c6c,
+    link: rgb(0, 155, 176),
+    primary: #67b6c1,
+    white: #f4feff
+);
+
+// 
+
+// function
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora',
+    sans-serif;
+    background-color: color(primary);
+    height: 100vh;
+
+    header {
+        background: color(white);
+
+        & .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+
